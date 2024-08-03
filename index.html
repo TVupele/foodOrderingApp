@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Grills App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Northern Grills & Chills</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>N5000</p>
+                <button onclick="addToCart('Pizza', 5000)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger.jpeg" alt="Burger">
+                <h3>Burger</h3>
+                <p>N3000</p>
+                <button onclick="addToCart('Burger', 3000)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/pasta.jpeg" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>N6000</p>
+                <button onclick="addToCart('Pasta', 6000)">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+            <p id="total-price">Total: N0</p>
+            <button onclick="placeOrder()">Place Order</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Northern Grills & Chills. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
